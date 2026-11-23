@@ -1,0 +1,134 @@
+:root{--bg:#090e1b;--panel:#111b2d;--panel2:#141f33;--text:#f4f7ff;--muted:#a0aec5;--accent:#6b8cff;--accent2:#56e0d0;--line:rgba(190,206,255,.13)}*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:85px}body{margin:0;background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;line-height:1.7;overflow-x:hidden}a{text-decoration:none;color:inherit}button{font:inherit}.container{width:min(1160px,calc(100% - 48px));margin:auto}.ambient{position:absolute;z-index:-1;pointer-events:none;filter:blur(90px);border-radius:50%;opacity:.23}.ambient-one{width:430px;height:430px;background:#3155d3;top:70px;right:-150px}.ambient-two{width:320px;height:320px;background:#0b938f;top:560px;left:-200px}.site-header{position:fixed;top:0;left:0;width:100%;z-index:100;background:rgba(9,14,27,.74);backdrop-filter:blur(18px);border-bottom:1px solid var(--line)}.nav{display:flex;align-items:center;justify-content:space-between;height:78px}.logo{font:700 29px 'Space Grotesk',sans-serif;letter-spacing:-2px}.logo span{color:var(--accent2)}.nav-links{display:flex;align-items:center;gap:30px}.nav-links a{font-size:13px;font-weight:700;color:#aab7cd;transition:color .25s}.nav-links a:hover,.nav-links a.active{color:#fff}.nav-links .nav-contact{padding:10px 18px;border:1px solid #50639b;border-radius:9px;color:#fff}.menu-toggle{display:none;background:none;border:0;padding:8px;cursor:pointer}.menu-toggle span{display:block;width:24px;height:2px;background:white;margin:5px 0}.hero{min-height:790px;display:grid;grid-template-columns:1.12fr .88fr;align-items:center;gap:45px;padding-top:110px;padding-bottom:110px;position:relative}.eyebrow,.section-kicker{font-size:11px;font-weight:800;letter-spacing:2.2px;color:var(--accent2)}.eyebrow{display:inline-flex;align-items:center;gap:10px;background:rgba(86,224,208,.08);padding:9px 14px;border:1px solid rgba(86,224,208,.22);border-radius:30px}.status-dot{width:7px;height:7px;background:#5de6b9;border-radius:50%;box-shadow:0 0 12px #5de6b9}.intro{font-size:19px;color:#b8c5da;margin:30px 0 0}.hero h1{font:700 clamp(68px,8vw,112px)/.99 'Space Grotesk',sans-serif;letter-spacing:-7px;margin:8px 0 24px}.hero h1 span{background:linear-gradient(95deg,#80a2ff,#69e2d1);background-clip:text;-webkit-background-clip:text;color:transparent}.role{font:600 clamp(17px,2vw,22px) 'Space Grotesk',sans-serif;min-height:34px}.role #typed-role{color:var(--accent2)}.cursor{color:var(--accent2);animation:blink .8s infinite}@keyframes blink{50%{opacity:0}}.hero-description{max-width:570px;color:var(--muted);font-size:15px;margin:24px 0 30px}.hero-actions{display:flex;gap:13px;flex-wrap:wrap}.btn{display:inline-flex;align-items:center;justify-content:center;gap:18px;padding:13px 22px;border-radius:10px;font-weight:800;font-size:13px;transition:transform .25s,box-shadow .25s}.btn:hover{transform:translateY(-4px)}.btn-primary{background:linear-gradient(110deg,#6c88ff,#4f6ee9);color:white;box-shadow:0 10px 35px rgba(89,115,239,.24)}.btn-outline{border:1px solid #46526d;color:white}.hero-mini{display:flex;gap:36px;margin-top:65px}.hero-mini div{display:flex;flex-direction:column}.hero-mini strong{font:700 17px 'Space Grotesk',sans-serif}.hero-mini span{font-size:11px;color:var(--muted)}.hero-visual{height:480px;display:grid;place-items:center;position:relative}.visual-ring{position:absolute;width:410px;height:410px;border:1px solid rgba(125,156,252,.2);border-radius:50%}.visual-ring:before{content:'';position:absolute;inset:24px;border:1px dashed rgba(125,156,252,.17);border-radius:50%}.visual-grid{position:absolute;inset:15px;background-image:radial-gradient(#6480c2 1px,transparent 1px);background-size:22px 22px;opacity:.13;mask-image:radial-gradient(circle,black,transparent 70%)}.portrait-card{position:relative;width:min(340px,90%);height:400px;border:1px solid rgba(144,171,255,.4);border-radius:26px;background:linear-gradient(145deg,#263d72,#15243f 65%,#123e4b);overflow:hidden;box-shadow:0 30px 70px rgba(0,0,0,.35);transform:rotate(3deg)}.portrait-card img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center}.portrait-fallback{position:absolute;inset:0;display:grid;place-items:center;font:700 120px 'Space Grotesk',sans-serif;color:#a5b9ff;opacity:.75}.portrait-caption{position:absolute;bottom:18px;left:18px;right:18px;display:flex;align-items:center;gap:13px;background:rgba(9,14,27,.8);backdrop-filter:blur(14px);padding:13px;border:1px solid rgba(255,255,255,.2);border-radius:13px}.caption-icon{color:var(--accent2);font-size:25px}.portrait-caption strong,.portrait-caption small{display:block;line-height:1.45}.portrait-caption small{font-size:10px;color:#b9c6dc}.floating-chip{position:absolute;z-index:2;background:#172741;border:1px solid #3a5680;box-shadow:0 12px 35px rgba(0,0,0,.3);padding:11px 15px;border-radius:10px;font-size:12px;font-weight:700}.chip-one{top:60px;left:0;transform:rotate(-8deg)}.chip-two{right:-10px;bottom:80px;transform:rotate(7deg)}.scroll-cue{position:absolute;bottom:40px;left:0;color:#8c9bb6;font-size:10px;letter-spacing:2px;font-weight:800}.scroll-cue span{margin-left:12px;color:var(--accent2)}.section{padding:110px 0}.section-alt{background:#0e1626;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.section-heading{margin-bottom:42px}.section-heading h2,.contact-inner h2{font:700 clamp(38px,5vw,60px)/1.15 'Space Grotesk',sans-serif;letter-spacing:-2.8px;margin:17px 0}.section-heading h2 em,.contact-inner h2 em{font-style:normal;color:#80a0ff}.section-heading>p{max-width:540px;color:var(--muted);font-size:14px}.about-grid{display:grid;grid-template-columns:.95fr 1.05fr;gap:70px}.about-content{padding-top:32px;color:var(--muted);font-size:15px}.about-content p{margin:0 0 22px}.about-content strong{color:#fff}.about-tags,.skill-tags{display:flex;flex-wrap:wrap;gap:9px}.about-tags span,.skill-tags span{font-size:11px;color:#b5c7e9;border:1px solid #344561;background:#17243a;border-radius:7px;padding:6px 12px}.skills-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.skill-card{padding:30px;border:1px solid var(--line);border-radius:18px;background:linear-gradient(145deg,#162137,#0f192a);transition:transform .3s,border-color .3s}.skill-card:hover,.project-card:hover{transform:translateY(-8px);border-color:rgba(116,152,255,.5)}.skill-icon{display:grid;place-items:center;width:52px;height:52px;border-radius:13px;background:#273c6b;color:#9cb6ff;font-size:27px}.skill-card h3,.project-body h3,.timeline-content h3{font:700 21px 'Space Grotesk',sans-serif;margin:24px 0 10px}.skill-card p,.project-body p,.timeline-content p{font-size:13px;color:var(--muted);line-height:1.8}.skill-tags{margin-top:25px}.projects-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:25px}.project-card{background:#121e31;border:1px solid var(--line);border-radius:18px;overflow:hidden;transition:transform .3s,border-color .3s}.project-art{height:220px;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}.project-art:after{content:'';position:absolute;width:260px;height:260px;border:1px solid rgba(255,255,255,.2);border-radius:50%;box-shadow:0 0 0 45px rgba(255,255,255,.035),0 0 0 95px rgba(255,255,255,.02)}.art-one{background:linear-gradient(135deg,#193b71,#346ac0)}.art-two{background:linear-gradient(135deg,#145358,#1e8d88)}.art-three{background:linear-gradient(135deg,#42316d,#7954b8)}.art-four{background:linear-gradient(135deg,#6b3b51,#b2647a)}.art-symbol{font-size:75px;z-index:1;color:white;text-shadow:0 8px 20px rgba(0,0,0,.15)}.art-label,.art-number{position:absolute;z-index:2;font-size:10px;font-weight:800;letter-spacing:1.5px;color:#e4ecff}.art-label{top:20px;left:22px}.art-number{bottom:17px;right:22px;font-size:25px;opacity:.6}.project-body{padding:25px}.project-meta{font-size:11px;font-weight:800;letter-spacing:.6px;color:var(--accent2)}.project-body h3{margin:12px 0 8px}.project-body p{margin:0 0 20px}.project-type{font-size:12px;color:#b9c9ff;font-weight:700}.project-note{color:#8391a8;font-size:12px;margin-top:22px}.timeline{border-left:1px solid #34435e;margin-left:11px}.timeline-item{display:grid;grid-template-columns:190px 1fr;gap:30px;position:relative;padding:0 0 44px 35px}.timeline-item:last-child{padding-bottom:0}.timeline-marker{position:absolute;left:-7px;top:7px;width:13px;height:13px;border-radius:50%;background:var(--accent2);box-shadow:0 0 0 6px #142b36}.timeline-date{font-size:11px;letter-spacing:1px;font-weight:800;color:var(--accent2);padding-top:6px}.timeline-content{border-bottom:1px solid var(--line);padding-bottom:25px}.timeline-content h3{margin:0 0 8px}.timeline-content p{margin:0;max-width:650px}.contact-section{background:radial-gradient(ellipse at 50% 80%,#1b2e59 0%,#0a1221 65%);text-align:center}.contact-inner h2{font-size:clamp(50px,7vw,85px);margin:20px 0}.contact-inner>p{max-width:510px;margin:0 auto 30px;color:var(--muted)}.btn-large{padding:16px 28px}.contact-inner .contact-hint{font-size:11px;color:#8190a9;margin-top:20px}.footer{border-top:1px solid var(--line);padding:25px 0}.footer-inner{display:flex;align-items:center;justify-content:space-between;gap:20px}.footer-inner>span,.footer-inner>a:last-child{font-size:11px;color:#8998b0}.back-top{position:fixed;bottom:25px;right:25px;width:40px;height:40px;display:grid;place-items:center;background:#4968d9;border-radius:10px;z-index:90;opacity:0;pointer-events:none;transition:opacity .2s}.back-top.visible{opacity:1;pointer-events:auto}.reveal{opacity:0;transform:translateY(25px);transition:opacity .7s ease,transform .7s ease}.reveal.visible{opacity:1;transform:translateY(0)}@media(max-width:960px){.hero{grid-template-columns:1fr;gap:20px;padding-top:145px}.hero-visual{height:460px}.scroll-cue{display:none}.about-grid{grid-template-columns:1fr;gap:0}.about-content{padding-top:0}.skills-grid{grid-template-columns:1fr 1fr}.nav-links{gap:16px}.hero h1{font-size:80px}}@media(max-width:680px){.container{width:min(100% - 36px,1160px)}.nav{height:68px}.menu-toggle{display:block}.nav-links{position:absolute;top:68px;left:0;right:0;display:none;flex-direction:column;align-items:stretch;gap:0;background:#101a2c;border-bottom:1px solid var(--line);padding:12px 20px 20px}.nav-links.open{display:flex}.nav-links a{padding:12px}.nav-links .nav-contact{text-align:center;margin-top:8px}.hero{padding-top:125px;padding-bottom:65px;min-height:unset}.hero h1{font-size:clamp(59px,15vw,78px);letter-spacing:-5px}.intro{margin-top:24px}.hero-mini{gap:18px;margin-top:38px;flex-wrap:wrap}.hero-mini strong{font-size:14px}.hero-visual{height:395px}.portrait-card{width:275px;height:340px}.visual-ring{width:330px;height:330px}.floating-chip{font-size:10px;padding:8px}.chip-one{left:-4px;top:30px}.chip-two{right:-5px;bottom:35px}.section{padding:75px 0}.section-heading h2{letter-spacing:-1.8px}.skills-grid,.projects-grid{grid-template-columns:1fr}.timeline-item{grid-template-columns:1fr;gap:7px;padding-left:25px}.timeline-content h3{font-size:19px}.footer-inner{flex-direction:column;text-align:center}.contact-inner h2{letter-spacing:-2px}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.reveal{opacity:1;transform:none;transition:none}*{animation-duration:.01ms!important}}
+
+/* Mode tanpa JavaScript: konten selalu terlihat */
+.reveal{opacity:1;transform:none}
+.back-top{opacity:1;pointer-events:auto}
+@media(max-width:680px){.nav-links:target{display:flex}.nav-links:target a{display:block}}
+
+/* =========================================================
+   VERSI GALERI FOTO: 9 SERTIFIKAT + 6 PROYEK
+   Tanpa JavaScript — Cukup ganti file JPG di folder assets
+   ========================================================= */
+
+/* Navigasi mobile tanpa JavaScript */
+.menu-check { position:absolute; opacity:0; width:1px; height:1px; }
+.menu-toggle { cursor:pointer; }
+@media (max-width:680px) {
+  .nav-links { display:none; }
+  .menu-check:checked ~ .nav-links { display:flex; }
+}
+
+/* Tampilan preview proyek yang bisa langsung diganti fotonya */
+.project-art { isolation:isolate; background:#182845; }
+.project-image {
+  position:absolute; inset:0; z-index:0;
+  width:100%; height:100%; object-fit:cover;
+  transition:transform .4s ease;
+}
+.project-card:hover .project-image { transform:scale(1.05); }
+.project-art::before {
+  content:""; position:absolute; inset:0; z-index:1;
+  background:linear-gradient(180deg,rgba(6,12,26,.55),transparent 45%,rgba(6,12,26,.55));
+}
+.project-art .art-label,.project-art .art-number{z-index:2;}
+.project-art:after{display:none;}
+
+/* Sertifikat: galeri foto dengan ukuran seragam */
+.certificate-grid {
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:24px;
+  align-items:stretch;
+}
+.certificate-card {
+  display:flex; flex-direction:column; overflow:hidden;
+  background:#121e31;
+  border:1px solid rgba(255,255,255,.1);
+  border-radius:19px;
+  transition:transform .3s ease,border-color .3s ease,box-shadow .3s ease;
+}
+.certificate-card:hover {
+  transform:translateY(-6px);
+  border-color:#7794f5;
+  box-shadow:0 20px 40px rgba(0,0,0,.2);
+}
+.certificate-image-link {
+  display:block; position:relative;
+  aspect-ratio: 1.42;
+  overflow:hidden; background:#e7edf7;
+}
+.certificate-image {
+  display:block; width:100%; height:100%; object-fit:cover;
+  transition:transform .4s ease;
+}
+.certificate-card:hover .certificate-image { transform:scale(1.045); }
+.certificate-image-badge {
+  position:absolute; right:13px; bottom:13px;
+  color:#fff; background:rgba(8,16,34,.84);
+  border:1px solid rgba(255,255,255,.3);
+  border-radius:7px; font-size:11px; font-weight:700;
+  padding:8px 10px;
+}
+.certificate-info { flex:1; display:flex; flex-direction:column; padding:24px; }
+.certificate-label { color:#86a9ff; font-size:10px; font-weight:800; letter-spacing:1.3px; }
+.certificate-info h3 { font:700 20px/1.35 'Space Grotesk',sans-serif; margin:12px 0; }
+.certificate-info p { font-size:13px; color:#abb8cd; line-height:1.7; margin:0 0 12px; }
+.certificate-info .certificate-issuer { color:#d4dff4; font-size:12px; margin-top:auto; }
+.certificate-link {
+  display:inline-flex; align-items:center; justify-content:center;
+  margin-top:14px; padding:12px 16px;
+  background:#243969; color:#e9efff; border:1px solid #4e70b6;
+  border-radius:10px; font-size:12px; font-weight:800;
+  transition:background .2s ease;
+}
+.certificate-link:hover { background:#3b63c7; }
+.certificate-note{color:#a3afc5; font-size:12px; line-height:1.7; margin-top:25px;}
+
+@media (max-width:960px) {
+  .certificate-grid{grid-template-columns:repeat(2,minmax(0,1fr));}
+}
+@media (max-width:680px) {
+  .certificate-grid{grid-template-columns:1fr;}
+  .certificate-info{padding:20px;}
+  .certificate-info h3{font-size:19px;}
+}
+/* Fokus keyboard untuk navigasi dan gambar */
+a:focus-visible,label:focus-visible{outline:3px solid #9dc2ff;outline-offset:4px;}
+
+
+/* ================================================
+   KARTU PDF SERTIFIKAT — MASUKKAN FILE PDF SAJA
+   Browser akan mencoba menampilkan halaman pertama.
+   Tombol tetap membuka PDF walau preview tidak didukung HP.
+   ================================================ */
+.certificate-pdf-preview{
+  position:relative;width:100%;aspect-ratio:1.35;
+  background:linear-gradient(135deg,#263b65,#172943);
+  overflow:hidden;isolation:isolate;border-bottom:1px solid rgba(255,255,255,.1);
+}
+.certificate-pdf-preview::before{
+  content:'PREVIEW PDF';position:absolute;left:16px;top:15px;z-index:0;
+  font:700 13px 'DM Sans',sans-serif;color:#d4e3ff;
+}
+.certificate-pdf-preview iframe{
+  display:block;position:absolute;inset:0;width:100%;height:100%;border:0;
+  background:transparent;pointer-events:none;
+}
+.certificate-preview-click{
+  position:absolute;inset:0;z-index:2;display:flex;
+  align-items:flex-end;justify-content:flex-end;padding:12px;
+  text-decoration:none;
+}
+.certificate-pdf-chip{
+  color:#f9fbff;background:rgba(10,24,50,.94);border:1px solid rgba(255,255,255,.25);
+  border-radius:8px;padding:7px 10px;font-size:11px;font-weight:800;
+  transition:background .2s ease;
+}
+.certificate-preview-click:hover .certificate-pdf-chip{background:#3b63c7;}
+.certificate-card{min-width:0;}
+/* Nav mobile tetap dapat dibuka tanpa JavaScript dan tetap di atas konten */
+.menu-toggle{position:relative;z-index:1001;}
+@media(max-width:680px){
+  .nav-links{max-height:calc(100vh - 68px);overflow:auto;}
+  .certificate-pdf-preview{aspect-ratio:1.48;}
+}
